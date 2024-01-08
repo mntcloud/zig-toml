@@ -4,7 +4,7 @@ pub fn build(b: *Builder) void {
     const target = b.standardTargetOptions(.{});
     const optimize = b.standardOptimizeOption(.{});
 
-    b.addModule("toml", .{
+    _ = b.addModule("toml", .{
         .source_file = .{ .path = "src/toml.zig" }
     });
 
